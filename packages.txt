@@ -1,6 +1,10 @@
+tensorflow
+scrape-search-engine
+images-into-array
+url-into-images
 scikit-learn
 scikit-image
-tensorflow
+python-gmail
 matplotlib
 requests
 shuffle
