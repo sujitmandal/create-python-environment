@@ -10,6 +10,7 @@ read environment
 conda activate $environment
 
 pip install tensorflow
+pip install jupyter notebook
 
 echo $'\n'
 pip install -r packages.txt
