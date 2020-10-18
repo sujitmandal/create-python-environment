@@ -9,6 +9,8 @@ echo $'Enter Environment Name : '
 read environment
 conda activate $environment
 
+pip install tensorflow
+
 echo $'\n'
 pip install -r packages.txt
 

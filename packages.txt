@@ -1,4 +1,3 @@
-tensorflow
 scrape-search-engine
 images-into-array
 url-into-images
