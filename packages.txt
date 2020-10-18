@@ -1,5 +1,6 @@
 scrape-search-engine
 images-into-array
+jupyter notebook
 url-into-images
 scikit-learn
 scikit-image
