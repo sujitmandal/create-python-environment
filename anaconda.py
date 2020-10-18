@@ -30,8 +30,10 @@ if request.status_code == 200:
             print('Download Completed.')
 
         else:
+            print('\n')
             print('File Exists On The Current Directory..')
-            print(fileName[-1])
+            directory = os.popen('sh shell.sh').readline()
+            print(directory)
             
     except OSError:
         print('Error: Creating directory!')
