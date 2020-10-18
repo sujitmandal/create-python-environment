@@ -1,5 +1,5 @@
 ## create-python-environment
-create python environment using bash bash shell script. [Automation] it will download anaconda .sh file form "https://www.anaconda.com/products/individual" and then installed on your linux system and tyhen create python environment with your preffrerance python version. then it will install all the python packages in listed "packages.txt". you can adjust packages by removeing or adding your reqirment.
+create python environment using bash shell script. [Automation] it will download anaconda .sh file form "https://www.anaconda.com/products/individual" and then installed on your linux system and then create python environment with your preffrerance python version. After that it will install all the python packages in listed "packages.txt". you can adjust packages by removeing or adding your reqirment.
 
 ## How to Run
 ```
