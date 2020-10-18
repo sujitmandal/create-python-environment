@@ -10,7 +10,7 @@ read environment
 conda activate $environment
 
 echo $'\n'
-pip install -r requirements.txt
+pip install -r packages.txt
 
 conda install -c conda-forge opencv=4.2.0
 
