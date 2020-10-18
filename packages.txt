@@ -1,0 +1,15 @@
+scikit-learn
+scikit-image
+tensorflow
+matplotlib
+requests
+shuffle
+seaborn
+pandas
+flask
+keras
+numpy
+scipy
+wget
+tqdm
+bs4
