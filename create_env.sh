@@ -15,7 +15,7 @@ echo $'\n'
 python3 anaconda.py
 
 echo $'\n'
-bash Anaconda3-2020.07-Linux-x86_64.sh
+python anaconda.py
 
 echo $'\n'
 echo $'Enter Environment Name : ' 

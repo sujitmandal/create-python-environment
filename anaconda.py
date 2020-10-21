@@ -10,33 +10,42 @@ LinkedIn : https://www.linkedin.com/in/sujit-mandal-91215013a/
 """
 
 URL = 'https://www.anaconda.com/products/individual'
-request = requests.get(URL)
 
-if request.status_code == 200:
-    soup = BeautifulSoup(request.content, 'html.parser')
-    downloadLinks = []
+def Anaconda(URL):
+    request = requests.get(URL)
 
-    for i in soup.find_all('a', {'class' : 'link-download js-event-individual'}):
-        link = i['href']
-        downloadLinks.append(link)
+    if request.status_code == 200:
+        soup = BeautifulSoup(request.content, 'html.parser')
+        downloadLinks = []
 
-    downloadLink = downloadLinks[-2]
-    fileName = downloadLink.split('/')
+        for i in soup.find_all('a', {'class' : 'link-download js-event-individual'}):
+            link = i['href']
+            downloadLinks.append(link)
 
-    try:
-        if not os.path.exists(fileName[-1]):
-            shFile = wget.download(downloadLink)
-            print('\n')
-            print('Download Completed.')
+        downloadLink = downloadLinks[-2]
+        fileNames = downloadLink.split('/')
+        fileName = fileNames[-1]
 
-        else:
-            print('\n')
-            print('File Exists On The Current Directory..')
-            directory = os.popen('sh shell.sh').readline()
-            print(directory)
+        try:
+            if not os.path.exists('Download'):
+                os.mkdir('Download')
+                folder = (os.getcwd() + '/Download')
+
+                destination = os.path.join(folder, fileName)
+                wget.download(downloadLink, out=destination)
+                print('\n')
+                print('Download Completed.')
+
+            else:
+                print('\n')
+                print('File Exists On This Directory..')
+                print('Directory : {}'.format(os.getcwd()) + '/Download')
+                
+        except OSError:
+            print('Error: Creating directory!')
             
-    except OSError:
-        print('Error: Creating directory!')
-        
-else:
-    print('Connection Error..')
+    else:
+        print('Connection Error..')
+
+if __name__ == "__main__":
+    Anaconda(URL)
