@@ -11,7 +11,6 @@ def fileName():
     fileName = fileNames[0]
 
     insall = 'bash'+ ' ' + fileName
-    print(insall)
     return(insall)
 
 if __name__ == "__main__":
