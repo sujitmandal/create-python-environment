@@ -11,7 +11,8 @@ def fileName():
     fileName = fileNames[0]
 
     insall = 'bash'+ ' ' + fileName
-    return(insall)
-
+    os.chdir('Download')
+    os.system(insall)
+    
 if __name__ == "__main__":
     fileName()

@@ -9,13 +9,13 @@ sudo apt install git
 sudo apt install python3-pip
 
 echo $'\n'
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 echo $'\n'
 python3 anaconda.py
 
 echo $'\n'
-python anaconda.py
+python3 install.py
 
 echo $'\n'
 echo $'Enter Environment Name : ' 
@@ -26,5 +26,4 @@ read version
 #conda update -n base -c defaults conda
 
 conda create --name $environment python=$version
-
 conda info --envs
