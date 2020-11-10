@@ -7,9 +7,11 @@ Step 1: git clone https://github.com/sujitmandal/create-python-environment.git
 
 Step 2: cd create-python-environment
 
-Step 3: bash create_env.sh
+Step 3: bash install.sh
 
-Step 4: source activate_env.sh
+Step 4: bash create_env.sh
+
+Step 5: source activate_env.sh
 ```
 
 ## License:
